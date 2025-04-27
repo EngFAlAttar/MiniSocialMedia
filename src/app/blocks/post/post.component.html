@@ -1,0 +1,28 @@
+
+  <div>
+    <mat-card class="example-card" appearance="outlined">
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image"></div>
+          <mat-card-title>{{post()!.title}}</mat-card-title>
+          <!-- <mat-card-subtitle>Dog Breed</mat-card-subtitle> -->
+        </mat-card-header>
+        <img mat-card-image src="{{post()!.img}}" alt="Photo of a Shiba Inu">
+        <mat-card-content>
+          <p>
+            {{post()!.description}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions class="w-100">
+            <div class="d-flex flex-row justify-content-between w-100">
+                <div>
+                    <button mat-button><mat-icon>favorite_border</mat-icon></button>
+                    <button mat-button><mat-icon> chat_bubble_outline</mat-icon></button>
+                </div>
+                <div>
+                    <button mat-button><mat-icon style="color:brown;">delete</mat-icon></button>
+                </div>
+            </div>
+          
+        </mat-card-actions>
+     </mat-card>
+  </div>

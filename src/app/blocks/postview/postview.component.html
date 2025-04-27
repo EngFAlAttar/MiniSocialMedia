@@ -1,0 +1,10 @@
+<div class="containter">
+    <mat-grid-list cols="3" rowHeight="1:2">
+        <button mat-raised-button (click)="createPost()">+ Create Post</button>
+        @for (post of posts; track post.id) {
+            <mat-grid-tile><app-post class="w-100" [post]="post">
+
+            </app-post></mat-grid-tile>
+        }
+      </mat-grid-list>
+</div>
